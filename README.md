@@ -1,7 +1,13 @@
 # Check-MTL-Validation
-MATLAB Scripts to check the validity of the MTL expressions used in the Channel Simulator
+MATLAB Scripts to check the validity of the MTL expressions used in the Channel Simulator. 
 
-We will start by checking the similarity between the Clayton expressions used in the JSAC and the theoretical expressions found in the Clayton. First, simple transmission lines will be tested, then some longer and more complex lines will be checked against each other.
+In this repository, a set of files can be found which try to assure the validity of the MTL procedure used in the JSAC.
+
+--------- Contents ---------
+
+1 - The first set of files, named "Lossless Exact Solution Clayton", compares the MTL procedure against the exact solution of the crosstalk voltage given in Page 361-365 Clayton (under a certain set of assumption: lossless line, homogeneus surrounding medium).
+
+2 - The second set of files, named "Lossy MTL-BifilarTL", compares the MTL procedure against the widely studied bifilar transmission line. To do so, we place one of the conductors in the MTL line extremely far away from the rest of the conductors and it will only be conected to them through extremely high impedances (simulating open circuit).
 
 --------- Clayton ---------
 
@@ -21,8 +27,4 @@ We will start by checking the similarity between the Clayton expressions used in
 
 * MTL equivalent circuit (theoretical expression): Pag 361
 
---------- Contents ---------
 
-1 - Ultra short lines (3 wires, 0.1 cm long, 5 cm separated)
-2 - Simple lines (3 wires, 5 cm long, 5 cm separated)
-3 - Slightly longer lines (3 wires, 20 cm long, 5 cm separated)
